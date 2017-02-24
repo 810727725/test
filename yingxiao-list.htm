@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>imei3.0系统平台</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/home.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+ <script src="js/jquery.min.js"></script>
+    <script src="js/web.js"></script>
+</head>
+<body>
+<!--标签开始-->
+<div class="rows">
+     <h3>营销执行</h3>
+	 <!--标签开始-->
+    <form class="form-inline infor-ku mb-10">
+        <div class="form-group col-5">
+            <label for="name">号码:</label>
+            <input type="text" class="input-sm form-control" id="name" placeholder="请输入号码">
+        </div>
+        <div class="form-group col-5">
+            <label for="name">产品:</label>
+            <input type="date" name="local-time" class="input-sm form-control">
+        </div>
+        <div class="form-group col-2">
+            <button type="button" class="btn btn-info btn-sm">查  询</button>
+        </div>
+    </form>
+    <div class="yingxiao">
+    <table cellpadding="0" cellspacing="0" border="0" class="table table-bordered table-responsive">
+        <tr class="info">
+            <th>号码</th>
+            <th>年龄</th>
+            <th>产品</th>
+            <th>终端</th>
+            <th>操作</th>
+        </tr>
+        <tr>
+            <td>15423452312</td>
+            <td>24</td>
+            <td>华为</td>
+            <td>华为</td>
+            <td><a onclick="infor()"><i class="fa fa-newspaper-o"></i>档案资料</a>
+                <a onclick="jilu()"><i class="fa fa-file-text-o"></i>接触记录</a>
+                <a onclick="mes()"><i class="fa fa-commenting-o"></i>短信</a><a><i class="fa fa-phone"></i>电话</a> </td>
+        </tr>
+        <tr>
+            <td>15423452312</td>
+            <td>24</td>
+            <td>华为</td>
+            <td>华为</td>
+            <td><a><i class="fa fa-newspaper-o"></i>档案资料</a> <a><i class="fa fa-file-text-o"></i>接触记录</a>  <a><i class="fa fa-commenting-o"></i>短信</a><a><i class="fa fa-phone"></i>电话</a> </td>
+        </tr>
+        <tr>
+            <td>15423452312</td>
+            <td>24</td>
+            <td>华为</td>
+            <td>华为</td>
+            <td><a><i class="fa fa-newspaper-o"></i>档案资料</a> <a><i class="fa fa-file-text-o"></i>接触记录</a>  <a><i class="fa fa-commenting-o"></i>短信</a><a><i class="fa fa-phone"></i>电话</a> </td>
+        </tr>
+        <tr>
+            <td>15423452312</td>
+            <td>24</td>
+            <td>华为</td>
+            <td>华为</td>
+            <td><a><i class="fa fa-newspaper-o"></i>档案资料</a> <a><i class="fa fa-file-text-o"></i>接触记录</a>  <a><i class="fa fa-commenting-o"></i>短信</a><a><i class="fa fa-phone"></i>电话</a> </td>
+        </tr>
+        <tr>
+            <td>15423452312</td>
+            <td>24</td>
+            <td>华为</td>
+            <td>华为</td>
+            <td><a><i class="fa fa-newspaper-o"></i>档案资料</a> <a><i class="fa fa-file-text-o"></i>接触记录</a>  <a><i class="fa fa-commenting-o"></i>短信</a><a><i class="fa fa-phone"></i>电话</a> </td>
+        </tr>
+        <tr>
+            <td>15423452312</td>
+            <td>24</td>
+            <td>华为</td>
+            <td>华为</td>
+            <td><a><i class="fa fa-newspaper-o"></i>档案资料</a> <a><i class="fa fa-file-text-o"></i>接触记录</a>  <a><i class="fa fa-commenting-o"></i>短信</a><a><i class="fa fa-phone"></i>电话</a> </td>
+        </tr>
+        <tr>
+            <td>15423452312</td>
+            <td>24</td>
+            <td>华为</td>
+            <td>华为</td>
+            <td><a><i class="fa fa-newspaper-o"></i>档案资料</a> <a><i class="fa fa-file-text-o"></i>接触记录</a>  <a><i class="fa fa-commenting-o"></i>短信</a><a><i class="fa fa-phone"></i>电话</a> </td>
+        </tr>
+        <tr>
+            <td>15423452312</td>
+            <td>24</td>
+            <td>华为</td>
+            <td>华为</td>
+            <td><a><i class="fa fa-newspaper-o"></i>档案资料</a> <a><i class="fa fa-file-text-o"></i>接触记录</a>  <a><i class="fa fa-commenting-o"></i>短信</a><a><i class="fa fa-phone"></i>电话</a> </td>
+        </tr>
+        </table>
+        </div>
+  </div>
+<!--右边内容-->
+<!-- 资料 -->
+<div class="bg_dialog"></div>
+    <div class="box_dialog" id="infor">
+        <h4>档案资料 <span onclick="hide()">&times;</span></h4>
+        <div class="infor">
+            <div class="infor_pic"><img src="img/kudic.jpg"/></div>
+        <div class="infot_txt">
+            <p>姓名：小草</p>
+            <p>号码：12524345612</p>
+            <p>产品：华为</p>
+            <p>标签：好动</p>
+            </div>
+        </div>
+       <h3>  echart图表
+       <img src="img/echarts.png" style="width:100%;"/>
+       </h3>
+    </div>
+
+<!-- 接触记录 -->
+<div class="bg_dialog"></div>
+    <div class="box_dialog" id="jilu">
+        <h4>接触记录 <span onclick="hide()">&times;</span></h4>
+        <table cellpadding="0" cellspacing="0" border="0" class="table table-bordered table-responsive">
+            <tr class="info">
+                <th>事件</th>
+                <th>渠道</th>
+                <th>时间</th>
+                <th>结果</th>
+            </tr>
+            <tr>
+                <td>10086发短信升级4G</td>
+                <td>短信</td>
+                <td>20160903</td>
+                <td>成功</td>
+            </tr>
+            <tr>
+                <td>10086发短信升级4G</td>
+                <td>短信</td>
+                <td>20160903</td>
+                <td>未成功</td>
+            </tr>
+            <tr>
+                <td>10086发短信升级4G</td>
+                <td>短信</td>
+                <td>20160903</td>
+                <td>未成功</td>
+            </tr>
+            <tr>
+                <td>10086发短信升级4G</td>
+                <td>短信</td>
+                <td>20160903</td>
+                <td>未成功</td>
+            </tr>
+            <tr>
+                <td>10086发短信升级4G</td>
+                <td>短信</td>
+                <td>20160903</td>
+                <td>未成功</td>
+            </tr>
+            </table>
+        </div>
+<div class="laypage_main laypageskin_default" >
+    <a href="javascript:;" class="on">上一页</a>
+<span class="laypage_curr">共10页</span>
+   <a href="javascript:;" class="laypage_next" data-page="7">下一页</a></div>
+</div>
+<!-- 短信 -->
+<div class="bg_dialog">
+    <div class="box_dialog" id="mes">
+        <h4>短信 <span onclick="hide()">&times;</span></h4>
+        <div class="message">
+        <p>编辑文本：<textarea rows="6" cols="52"></textarea></p>
+        <p><button class="btn btn-sm btn-info" style="width:80px;">发送</button></p>
+        </div>
+    </div>
+</div>
+	</body>
+</html>

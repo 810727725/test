@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>imei3.0系统平台</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/home.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.min.js"></script>
+<script src="js/web.js"></script>
+ <script src="laydate.dev.js"></script>
+<script src="js/bootstrap.js"></script>
+</head>
+<body>
+<!--头部-->
+<header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+       <span class="icon-bar"></span>
+	   <span class="icon-bar"></span>
+	   <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand"><img src="img/logo.png"/></a>
+    </div>
+    <nav id="bs-navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+      <ul class="nav navbar-nav">
+        <li>
+          <a>首页</a>
+        </li>
+        <li class="active">
+          <a>数据分析</a>
+        </li>
+        <li>
+          <a>模型挖掘</a>
+        </li>
+        <li>
+          <a>运营场景</a>
+        </li>
+        <li>
+          <a >资料库</a>
+        </li>
+        <li><a>系统管理</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <div class="search">
+			<i class="fa fa-search"></i>
+			<input type="text" required="" value="搜索"/>
+     </div>
+     <a style='color:#fff'><i class="fa fa-2x fa-bell"></i><small class="news">32</small></a>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!--头部结束-->
+<!--派单信息-->
+<div class="page_body mt-15">
+<div class="rows ml-15 mr-15">
+     <h3>派单信息</h3>
+	 <!--标表单列表-->
+	<form class="form-horizontal">
+  <div class="form-group">
+    <label for="inputname3" class="col-sm-2 control-label">活动名称：</label>
+    <div class="col-sm-10">
+      <input type="name" class="form-control" style="width:100%;" id="inputname3" placeholder="活动名称">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputname3" class="col-sm-2 control-label">清单口径：</label>
+    <div class="col-sm-10">
+      <textarea class="form-control"  style="width:100%;height:auto;">根据前几步清单选择规则自动生成，包含原始清单名称、时间、筛选标签内容……</textarea>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputname3" class="col-sm-2 control-label">起始时间：</label>
+    <div class="col-sm-10">
+     <input type="text" id="J-xl"  class="form-control">
+    </div>
+  </div>
+   <div class="form-group">
+    <label for="inputname3" class="col-sm-2 control-label">结束时间：</label>
+    <div class="col-sm-10">
+     <input type="text"  id="J-xl-2" class="form-control">
+    </div>
+  </div>
+   <div class="form-group">
+    <label for="inputname3" class="col-sm-2 control-label">活动渠道：</label>
+    <div class="col-sm-10">
+     <select class="form-control" style="width:100%;">
+	  <option>PCC</option>
+	  <option>按组织结构下派</option>
+	  <option>全触点</option>
+	  <option>10086</option>
+   </select>
+    </div>
+  </div>
+   <div class="form-group">
+    <label for="inputname3" class="col-sm-2 control-label">活动方案：</label>
+    <div class="col-sm-10">
+    <textarea class="form-control"  style="width:100%;">活动方案的经验分享</textarea>
+    </div>
+  </div>
+  </div>
+</form>
+   <div class="select_anniu"><button class="btn btn-info">上一步</button><button class="btn btn-info">发布</button><button class="btn btn-info">保存</button><button class="btn btn-info">取消</button></div>
+</div>
+<!--右边内容-->
+	</body>
+</html>

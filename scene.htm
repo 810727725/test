@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>imei3.0系统平台</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/home.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.min.js"></script>
+<script src="js/web.js"></script>
+<body>
+<!--头部-->
+<header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+       <span class="icon-bar"></span>
+	   <span class="icon-bar"></span>
+	   <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand"><img src="img/logo.png"/></a>
+    </div>
+    <nav id="bs-navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="index.htm">首页</a>
+        </li>
+        <li class="active">
+          <a href="data.htm">数据分析</a>
+        </li>
+        <li>
+          <a href="mode_dig.htm">模型挖掘</a>
+        </li>
+        <li>
+          <a>运营场景</a>
+        </li>
+        <li>
+          <a >资料库</a>
+        </li>
+        <li><a>系统管理</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <div class="search">
+			<i class="fa fa-search"></i>
+			<input type="text" required="" value="搜索"/>
+     </div>
+     <a style='color:#fff'><i class="fa fa-2x fa-bell"></i><small class="news">32</small></a>
+      </ul>
+    </nav>
+  </div>
+</header>
+<div class="page_body mt-15 ml-15 mr-15">
+	
+	  <form class="form-inline infor-ku">
+	  <div class="form-group">
+		  <label for="name">派单名称:</label>
+		  <input type="text" class="input-sm form-control" id="name" placeholder="请输入名称">
+      </div>
+	    <div class="form-group">
+      <label for="name">派单时间:</label>
+	    <select  class="form-control input-sm">
+         <option>4G迁转</option>
+         <option>套餐升档</option>
+         <option>沉默激活</option>
+         <option>4G锁卡解卡</option>
+         <option>异网赢回</option>
+		 <option>4G换卡</option>
+      </select>
+   </div>
+     <div class="form-group">
+      <label for="name">配属资源：</label>
+      <select  class="form-control input-sm">
+         <option>电子劵</option>
+         <option>购机券</option>
+         <option>流量</option>
+      </select>
+   </div>
+     <div class="form-group">
+     <label for="name">接收部门：</label>
+      <select  class="form-control input-sm">
+           <option>4G迁转</option>
+         <option>套餐升档</option>
+         <option>沉默激活</option>
+         <option>4G锁卡解卡</option>
+         <option>异网赢回</option>
+		 <option>4G换卡</option>
+      </select>
+	  </div>
+	  <div class="form-group">
+     <label for="name">派单状态:</label>
+      <select  class="form-control input-sm">
+         <option>挂起</option>
+         <option>撤销</option>
+         <option>已派单</option>
+		 <option>已完成</option>
+      </select>
+	  </div>
+	   <div class="form-group">
+     <label for="name">清单有效期截止:</label>
+      <select  class="form-control input-sm">
+         <option>挂起</option>
+         <option>撤销</option>
+         <option>已派单</option>
+		 <option>已完成</option>
+      </select>
+	  </div>
+	<div class="btn-gt"><button type="button" class="btn btn-info btn-sm">查  询</button>
+	<button type="button" class="btn btn-info btn-sm" onclick="window.location.href=('scene_add.htm')">新增</button></div>
+	  </form>
+	  <table class="table table-bordered mt-15">
+	   <thead>
+         <tr>
+		 <th>派单编号</th>
+         <th>派单名称</th>
+         <th>派单时间
+		<i class="fa fa-caret-up" style="margin-top:-3px;vertical-align:top;"></i><i class="fa fa-caret-down" style="margin-left:-7px;"></i>
+		 </th>
+         <th>接收部门</th>
+         <th>派单状态</th>
+         <th>清单有效期</th>
+         <th>效果监控</th>
+       </tr>
+	   </thead>
+	   <tbody>
+		<tr>
+		<td>20150601001</td>
+        <td>百万计划6月清单</td>
+		<td>2015年6月1日</td>
+		<td>客户经理</td>
+		<td>挂起</td> 
+		<td>2015年6月30日</td> 
+		<td>查看效果</td>
+         </tr>
+		 <tr>
+		<td>20150601002</td>
+        <td>清凉一夏活动清单</td>
+		<td>2015年6月1日</td>
+		<td>区县公司</td>
+		<td>已撤销</td> 
+		<td>2015年6月30日</td> 
+		<td>查看效果</td>
+         </tr>
+		  <tr>
+		<td>20150601003</td>
+        <td>XX活动清单</td>
+		<td>2015年4月1日</td>
+		<td>PCC</td>
+		<td>已派单</td> 
+		<td>2015年6月30日</td> 
+		<td>查看效果</td>
+         </tr>
+		<tr>
+		<td>20150601004</td>
+        <td>XX活动清单</td>
+		<td>2015年4月1日</td>
+		<td>10086</td>
+		<td>已完成</td> 
+		<td>2015年6月30日</td> 
+		<td>查看效果</td>
+         </tr>
+		  <tr>
+		<td>20150601004</td>
+        <td>XX活动清单</td>
+		<td>2015年4月1日</td>
+		<td>10086</td>
+		<td>已完成</td> 
+		<td>2015年6月30日</td> 
+		<td>查看效果</td>
+         </tr>
+		  <tr>
+		<td>20150601004</td>
+        <td>XX活动清单</td>
+		<td>2015年4月1日</td>
+		<td>10086</td>
+		<td>已完成</td> 
+		<td>2015年6月30日</td> 
+		<td>查看效果</td>
+         </tr>
+	   </tbody>
+	  </table>
+	
+	</div>
+</div>
+<!--右边内容-->
+	</body>
+</html>

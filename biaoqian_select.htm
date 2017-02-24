@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>imei3.0系统平台</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/home.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+<!--标签选择开始-->
+<div class="rows">
+    <!--进度条开始-->
+    <div class="step-body" id="myStep">
+        <div class="step-header" style="width: 100%; display: block;"><div class="step-bar"><div class="step-bar-active" style="width: 30%;"></div></div>
+            <ul>
+                <li class="step-active" style="width: 20%;"><p>创建活动</p><span>1</span></li>
+                <li class="step-active"  style="width: 20%;"><p>选择数据类型</p><span>2</span></li>
+                <li style="width: 20%;"><p>选择营销策略</p><span>3</span></li>
+                <li style="width: 20%;"><p>渠道配置</p><span>4</span></li>
+                <li style="width: 20%;"><p>审核完成</p><span>5</span></li>
+            </ul>
+        </div>
+        <div class="step-content">
+            <div class="step-list" style="display: block;"></div>
+            <div class="step-list" style="display: none;">选择数据类型</div>
+            <div class="step-list" style="display: none;">选择营销策略</div>
+            <div class="step-list" style="display: none;">审核完成</div>
+        </div>
+    </div>
+    <!--进度条结束-->
+     <h3>标签选择</h3>
+	 <!--标签开始-->
+    <!--点击打开关闭效果开始-->
+    <div class="tip">
+        <h4 onclick='show("tip1","img1")'><IMG
+                id=img1 hspace=1 src="img/jia.gif" align=absMiddle
+                border=0>视图</h4>
+        <div id="tip1" class="tip_cont">
+            <div id="selectList" class="screenBox">
+                <dl class="listIndex" id="listIndex-txt">
+                    <dt>网络类型：</dt>
+                    <dd>
+                        <label>2G</label>
+                        <label>3G</label>
+                        <label>4G</label>
+                    </dd>
+                    <button class="more">多选</button>
+                </dl>
+                <dl class="listIndex">
+                    <dt>品牌：</dt>
+                    <dd>
+                        <label><input name="radio" type="radio" value="">小米</label>
+                        <label><input name="radio" type="radio" value="">华为</label>
+                        <label><input name="radio" type="radio" value="">苹果</label>
+                    </dd>
+                    <button class="more">多选</button>
+                </dl>
+                <dl class="listIndex">
+                    <dt>操作系统：</dt>
+                    <dd id="tgbox">
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">安卓系统</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">ios</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">安卓系统</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">ios</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">windows</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">600-1500元</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">windows</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">600-1500元</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">windows</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">600-1500元</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">安卓系统</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">ios</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">安卓系统</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">ios</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">windows</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">600-1500元</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">windows</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">600-1500元</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">windows</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">600-1500元</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value=""><input type="text" value="" class="ipt_txt">-<input type="text" value="" class="ipt_txt"><button class="btn-self-info">确定</button>清除</label>
+                    </dd>
+                    <span class="fr">更多</span>
+                </dl>
+                <p align="center" style="clear: both;"><button class="btn btn-info mr-10">提交</button><button class="btn">取消</button></p>
+            </div>
+        </div>
+        <h4 onclick='show("tip2","img2")'><IMG
+                id=img2 hspace=1 src="img/jia.gif" align=absMiddle
+                border=0>全网终端流量分层</h4>
+        <div id="tip2" class="tip_cont">
+            <div id="selectList" class="screenBox">
+                <dl class="listIndex"  id="listIndex-txt">
+                    <dt>网络类型：</dt>
+                    <dd>
+                        <label>2G</label>
+                        <label>3G</label>
+                        <label>4G</label>
+                    </dd>
+                    <button class="more">多选</button>
+                </dl>
+                <dl class="listIndex">
+                    <dt>品牌：</dt>
+                    <dd>
+                        <label><input name="radio" type="radio" value="">小米</label>
+                        <label><input name="radio" type="radio" value="">华为</label>
+                        <label><input name="radio" type="radio" value="">苹果</label>
+                    </dd>
+                    <button class="more">多选</button>
+                </dl>
+                <dl class="listIndex">
+                    <dt>操作系统：</dt>
+                    <dd id="tgbox">
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">安卓系统</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">ios</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">安卓系统</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">ios</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">windows</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">600-1500元</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">windows</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">600-1500元</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">windows</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">600-1500元</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">安卓系统</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">ios</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">安卓系统</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">ios</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">windows</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">600-1500元</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">windows</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">600-1500元</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">windows</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">600-1500元</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value=""><input type="text" value="" class="ipt_txt">-<input type="text" value="" class="ipt_txt"><button class="btn-self-info">确定</button>清除</label>
+                    </dd>
+                    <span class="fr">更多</span>
+                </dl>
+                <p align="center" style="clear: both;"><button class="btn btn-info mr-10">提交</button><button class="btn">取消</button></p>
+            </div>
+        </div>
+        <h4 onclick='show("tip3","img3")'><IMG
+                id=img3 hspace=1 src="img/jia.gif" align=absMiddle
+                border=0>全网终端流量分层</h4>
+        <div id="tip3" class="tip_cont">
+            <div id="selectList" class="screenBox">
+                <dl class="listIndex" >
+                    <dt>网络类型：</dt>
+                    <dd>
+                        <label>2G</label>
+                        <label>3G</label>
+                        <label>4G</label>
+                    </dd>
+                    <button class="more">多选</button>
+                </dl>
+                <dl class="listIndex">
+                    <dt>品牌：</dt>
+                    <dd>
+                        <label><input name="radio" type="radio" value="">小米</label>
+                        <label><input name="radio" type="radio" value="">华为</label>
+                        <label><input name="radio" type="radio" value="">苹果</label>
+                    </dd>
+                    <button class="more">多选</button>
+                </dl>
+                <dl class="listIndex">
+                    <dt>操作系统：</dt>
+                    <dd id="tgbox">
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">安卓系统</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">ios</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">安卓系统</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">ios</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">windows</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">600-1500元</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">windows</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">600-1500元</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">windows</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">600-1500元</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">安卓系统</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">ios</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">安卓系统</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">ios</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">windows</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">600-1500元</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">windows</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">600-1500元</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">windows</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value="">600-1500元</label>
+                        <label class="w150"><input name="checkbox" type="checkbox" value=""><input type="text" value="" class="ipt_txt">-<input type="text" value="" class="ipt_txt"><button class="btn-self-info">确定</button>清除</label>
+                    </dd>
+                    <span class="fr">更多</span>
+                </dl>
+                <p align="center" style="clear: both;"><button class="btn btn-info mr-10">提交</button><button class="btn">取消</button></p>
+            </div>
+        </div>
+    </div>
+    <SCRIPT>
+        function show(c_Str,imgg)
+        {if(document.getElementById(c_Str).style.display=='none')
+        {document.getElementById(c_Str).style.display='block';
+            document.getElementById(imgg).src='img/jian.gif'}
+        else{document.getElementById(c_Str).style.display='none';
+            document.getElementById(imgg).src='img/jia.gif'}}
+        //多远
+        $('#tgbox label:gt(5)').hide();
+        $(function(){
+            $('span.fr').click(function(){
+              $(this).siblings().children("label:gt(5)").toggle();
+                $(this).text($(this).text()=="更多"?"收起":"更多");
+            })
+            //选择添加样式
+            $('#listIndex-txt dd label').click(function(){
+                $(this).addClass('active_bj');
+            })
+        })
+    </SCRIPT>
+<!--搜索-->
+    <form class="form-inline">
+        <div class="row mt-15  mb-15">
+            <div class="col-md-3"> 时间：
+                <select  class="form-control" style="display:inline-block;">
+                    <option>2016</option>
+                    <option>2015</option>
+                    <option>2014</option>
+                    <option>2013</option>
+                    <option>2012</option>
+                </select>
+                <select  class="form-control" style="display:inline-block;">
+                    <option>12月</option>
+                    <option>11月</option>
+                    <option>10月</option>
+                    <option>9月</option>
+                    <option>8月</option>
+                    <option>7月</option>
+                    <option>6月</option>
+                    <option>5月</option>
+                    <option>4月</option>
+                    <option>3月</option>
+                    <option>2月</option>
+                    <option>1月</option>
+                </select></div>
+            <div class="col-md-3">
+                <label>区域:</label>
+                <input type="text" name="local-time" class="input-sm form-control">
+               </div>
+            <div class="col-md-3">
+                <label>客户分类:</label>
+                <select  class="form-control" style="display:inline-block;">
+                    <option>客户一</option>
+                    <option>客户二</option>
+                    <option>客户三</option>
+                </select>
+            </div>
+            <div class="col-md-3"><button class="btn btn-info">查询</button> <button class="btn btn-info">导出</button> <button class="btn btn-info">统计口径</button></div>
+            </div>
+    </form>
+<!--表格-->
+    <table class="table table-bordered">
+        <thead>
+        <tr class="info">
+            <th rowspan="2">地市</th>
+            <th colspan='2'>[0,50]</th>
+            <th colspan='2'>[51,60]</th>
+            <th colspan='2'>[61,70]</th>
+            <th colspan='2'>[71,80]</th>
+            <th colspan='2'>[81,90]</th>
+            <th rowspan='2'>用户清单下载</th>
+        </tr>
+        <tr class="info">
+            <th>客户数</th>
+            <th>占比</th>
+            <th>客户数</th>
+            <th>占比</th>
+            <th>客户数</th>
+            <th>占比</th>
+            <th>客户数</th>
+            <th>占比</th>
+            <th>客户数</th>
+            <th>占比</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>西安</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>下载</td>
+        </tr>
+        <tr>
+            <td>宝鸡</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>下载</td>
+        </tr>
+        <tr>
+            <td>咸阳</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>下载</td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="clear">
+    <div class="fl"><button class="btn btn-info">获取</button>&nbsp;&nbsp;客户数：<font size="3" color="red">600</font> </div>
+    <div class="fr"><button class="btn btn-info mr-10" onclick="location.href=('celv.htm')">确认/下一步</button><button class="btn btn-info">保存</button></div>
+    </div>
+  </div>
+<!--右边内容-->
+	</body>
+</html>

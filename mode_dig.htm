@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>imei3.0系统平台</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/home.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.min.js"></script>
+<script src="js/web.js"></script>
+<script src="js/bootstrap.js"></script>
+</head>
+<body>
+<!--头部-->
+<header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+       <span class="icon-bar"></span>
+	   <span class="icon-bar"></span>
+	   <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand"><img src="img/logo.png"/></a>
+    </div>
+    <nav id="bs-navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+      <ul class="nav navbar-nav">
+        <li>
+          <a>首页</a>
+        </li>
+        <li class="active">
+          <a>数据分析</a>
+        </li>
+        <li>
+          <a>模型挖掘</a>
+        </li>
+        <li>
+          <a>运营场景</a>
+        </li>
+        <li>
+          <a >资料库</a>
+        </li>
+        <li><a>系统管理</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <div class="search">
+			<i class="fa fa-search"></i>
+			<input type="text" required="" value="搜索"/>
+     </div>
+     <a style='color:#fff'><i class="fa fa-2x fa-bell"></i><small class="news">32</small></a>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!--头部结束-->
+<div class="page_body">
+<!--菜单导航-->
+<div class="viewFramework-sidebar">
+	<div class="sidebar">
+		<div class="nav-icon sidebar-trans">终端<i class="fa fa-gear"></i></div> 
+		<div class="nav-icon sidebar-trans"><span>客户<i class="fa fa-unsorted"></i></span>
+		<div class="nav-item">
+		<div>渠道质量 </div>
+		<div>终端登网监控</div>
+		<div>登网</div>
+		<div class="two">当月</div>
+		<div class="two">去年累计</div>
+		</div>
+		</div>
+		
+		<div class="nav-icon sidebar-trans"><span>渠道<i class="fa fa-unsorted"></i></span>
+		
+		<div class="nav-item">
+		<div class="two">跟踪 </div>
+		<div>未登网</div>
+		</div>
+		</div>
+		
+		<div class="nav-icon sidebar-trans">自定义报表<i class="fa fa-gear"></i></div> 
+	</div>
+	<div class="sidebar-right" style="display:none;">
+	<div class="sidebar-nav">
+	<h3>当月</h3>
+	<ul>
+	<li><i></i>新售终端登网概况</li>
+	 <li class="dropdown"><i class="fa fa-sort-down"></i>新售终端登网概况
+	 <ul>
+	 <li>新售终端登网概况<li>
+	 <li>新售终端登网概况</li>
+	 </ul>
+	</li>
+	 <li class="dropdown"><i class="fa fa-sort-down"></i>  当月未登网终端渠道TOP
+	 <ul>
+	 <li> 当月未登网终端渠道TOP<li>
+	 <li> 当月未登网终端渠道TOP</li>
+	 </ul>
+	</li>
+	<li> <i></i>全年累计</li>
+	</ul>
+	</div>
+	<div class="sidebar-nav">
+	<h3>去年累计</h3>
+	<ul>
+	<li><i></i>终端登网概况</li>
+	 <li class="dropdown"><i class="fa fa-sort-down"></i> 终端分价位登网情况
+	 <ul>
+	 <li>终端分价位登网情况<li>
+	 <li>终端分价位登网情况</li>
+	 </ul>
+	</li>
+	 <li class="dropdown"><i class="fa fa-sort-down"></i>  终端分价位登网情况
+	 <ul>
+	 <li> 当月未登网终端渠道TOP<li>
+	 <li> 当月未登网终端渠道TOP</li>
+	 </ul>
+	</li>
+	<li> <i></i>全年累计</li>
+	</ul>
+	</div>
+
+	<div class="sidebar-nav" style="display:none;">
+	<h3>渠道</h3>
+	<ul>
+	<li><i></i>地市销售登网情况跟踪</li>
+	 <li class="dropdown"><i class="fa fa-sort-down"></i>  分渠道销售登网情况跟踪
+	 <ul>
+	 <li>终端分价位登网情况<li>
+	 <li>终端分价位登网情况</li>
+	 </ul>
+	</li>
+	<li> <i></i>未登网</li>
+	</ul>
+	</div>
+	</div>
+	<div class="navbar-inner" style="display:none;">
+	   <span class="fa fa-align-right"></span>
+	</div>
+</div>
+<!--右边内容-->
+	<div class="viewFramework-product">
+		<div class="viewFramework-product-body mt-15 ml-15 mr-15">
+		 <div class="panel panel-info">
+			<div class="panel-heading">模型背景介绍</div>
+			 <div class="panel-body">
+		      <P>还记得小时候的模样吗？现在的你跟那时比变化了多少？5月13日，腾讯图片联合锐成科技发起了《晒童年对比照》的征集，几百名网友投稿参与了活动。看到这些图片，不禁让人感慨“时间都去哪了？”我们选出来一部分优秀作品，一起来看看他们的有趣对比照吧，这里或许也有你的故事。</p>
+	        </div>
+		</div>
+		 <div class="panel panel-info">
+			<div class="panel-heading">模型详细介绍</div>
+			 <div class="panel-body">
+		      <P>还记得小时候的模样吗？现在的你跟那时比变化了多少？5月13日，腾讯图片联合锐成科技发起了《晒童年对比照》的征集，几百名网友投稿参与了活动。看到这些图片，不禁让人感慨“时间都去哪了？”我们选出来一部分优秀作品，一起来看看他们的有趣对比照吧，这里或许也有你的故事。</p>
+	        <p class="text-right"><a class="btn btn-info">PDF下载</a></p>
+			</div>
+		</div>
+		 <div class="panel panel-info">
+			<div class="panel-heading">模型更新说明</div>
+		  <table class="table table-bordered">
+	   <thead>
+         <tr>
+		 <th>模型版本</th>
+         <th>模型版本</th>
+         <th>模型计算成功率</th>
+         <th>更新时间</th>
+       </tr>
+	   </thead>
+	   <tbody>
+		<tr>
+		<td>v.1.0.20160418</td>
+        <td>first</td>
+        <td>30%</td>
+		<td>2016.04.28</td>
+         </tr>
+		 <tr>
+		<td>v.1.0.20160418</td>
+        <td>first</td>
+        <td>30%</td>
+		<td>2016.04.28</td>
+         </tr>
+		 <tr>
+		<td>v.1.0.20160418</td>
+        <td>first</td>
+        <td>30%</td>
+		<td>2016.04.28</td>
+         </tr>
+		 <tr>
+		<td>v.1.0.20160418</td>
+        <td>first</td>
+        <td>30%</td>
+		<td>2016.04.28</td>
+         </tr>
+		 </tbody>
+		 </table>
+		 </div>
+		</div>
+   </div>
+</div>
+</body>
+</html>

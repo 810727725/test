@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>imei3.0系统平台</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/home.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+<style>
+*{margin:0;padding:0;}
+.col-sm-3{padding:8px;text-align:center;font-size:14px;border-radius:5px;}
+.col-sm-3 i{display:block;font-size:36px;color:#323232;margin-top:15px;}
+.bd{border:1px solid #e3e3e3;border-radius:5px;padding-bottom: 10px;font-weight:800;color:#359ad6;background: #eee;}
+.bd:hover{background: #e1e1e1;border:1px solid #dcdcdc;box-shadow:0px 1px 4px #dcdcdc inset;}
+</style>
+</head>
+<body>
+<!--选择类型开始-->
+<div class="rows">
+    <!--进度条开始-->
+    <div class="step-body" id="myStep">
+        <div class="step-header" style="width: 100%; display: block;">
+            <div class="step-bar"><div class="step-bar-active" style="width: 30%;"></div></div>
+            <ul>
+                <li class="step-active" style="width: 20%;"><p>创建活动</p><span>1</span></li>
+                <li class="step-active" style="width: 20%;"><p>选择数据类型</p><span>2</span></li>
+                <li style="width: 20%;"><p>选择营销策略</p><span>3</span></li>
+                <li style="width: 20%;"><p>渠道配置</p><span>4</span></li>
+                <li style="width: 20%;"><p>审核完成</p><span>5</span></li>
+            </ul>
+        </div>
+        <div class="step-content">
+            <div class="step-list" style="display: block;"></div>
+            <div class="step-list" style="display: none;">选择数据类型</div>
+            <div class="step-list" style="display: none;">选择营销策略</div>
+            <div class="step-list" style="display: none;">审核完成</div>
+        </div>
+    </div>
+    <!--进度条结束-->
+     <h3>选择类型</h3>
+	 <!--类型分类-->
+	 <div class="col-sm-3">
+         <div class="bd" onclick="location.href=('changjing.htm')"><i class="fa fa-area-chart"></i>场景</div>
+     </div>
+	 <div class="col-sm-3">
+         <div class="bd" onclick="location.href=('moxing.htm')"><i class="fa fa-cube"></i>模型</div>
+     </div>
+	 <div class="col-sm-3">
+         <div class="bd" onclick="location.href=('biaoqian.htm')"><i class="fa fa-edit"></i>标签</div>
+     </div>
+	 <div class="col-sm-3">
+         <div class="bd" onclick="location.href=('daoru.htm')"><i class="fa fa-share-square-o"></i>导入</div>
+     </div>
+  </div>
+<!--右边内容-->
+	</body>
+</html>

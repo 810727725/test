@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>imei3.0系统平台</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/home.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.min.js"></script>
+<script src="js/web.js"></script>
+<script src="js/bootstrap.js"></script>
+</head>
+<body>
+<!--头部-->
+<header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+       <span class="icon-bar"></span>
+	   <span class="icon-bar"></span>
+	   <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand"><img src="img/logo.png"/></a>
+    </div>
+    <nav id="bs-navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+      <ul class="nav navbar-nav">
+        <li>
+          <a>首页</a>
+        </li>
+        <li class="active">
+          <a>数据分析</a>
+        </li>
+        <li>
+          <a>模型挖掘</a>
+        </li>
+        <li>
+          <a>运营场景</a>
+        </li>
+        <li>
+          <a >资料库</a>
+        </li>
+        <li><a>系统管理</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <div class="search">
+			<i class="fa fa-search"></i>
+			<input type="text" required="" value="搜索"/>
+     </div>
+     <a style='color:#fff'><i class="fa fa-2x fa-bell"></i><small class="news">32</small></a>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!--<header>
+<i class="fa fa-bars"></i>
+<nav><a>首页</a><a> 数据分析</a> <a>模型挖掘</a>  <a>运营场景</a><a>  资料库</a><a>  系统管理</a></nav>
+<div class="topbar">
+<div class="search">
+<i class="fa fa-search"></i>
+<input type="text" required="" value="搜索"/>
+</div>
+<a style='color:#fff'><i class="fa fa-2x fa-bell"></i><small class="news">32</small></a>
+</div>
+</header>-->
+<div class="page_body">
+<!--菜单导航-->
+<div class="viewFramework-sidebar">
+	<div class="sidebar">
+		<div class="nav-icon sidebar-trans"><span>页面配置<i class="fa fa-unsorted"></i></span>
+		<div class="nav-item">
+		<div>页面管理 </div>
+		</div>
+		</div> 
+		<div class="nav-icon sidebar-trans"><span>报表配置<i class="fa fa-unsorted"></i></span>
+		<div class="nav-item">
+		<div>报表管理 </div>
+		<div>聚合配置</div>
+		</div>
+		</div>
+		<div class="nav-icon sidebar-trans">清单配置<i class="fa fa-gear"></i></div> 
+		<div class="nav-icon sidebar-trans"><span>派单配置<i class="fa fa-unsorted"></i></span>
+		<div class="nav-item">
+		<div>派单渠道维护</div>
+		</div>
+		</div>
+		<div class="nav-icon sidebar-trans"><span>资源库配置<i class="fa fa-unsorted"></i></span>
+		<div class="nav-item">
+		<div>专题上传</div>
+		<div>营销资源配置</div>
+		</div>
+		</div>
+		<div class="nav-icon sidebar-trans"><span>标签管理<i class="fa fa-unsorted"></i></span>
+		<div class="nav-item">
+		<div>报表标签管理</div>
+		<div>型标签管理</div>
+		<div>清单标签管理</div>
+		</div>
+		</div>
+		<div class="nav-icon sidebar-trans"><span>系统管理<i class="fa fa-unsorted"></i></span>
+		<div class="nav-item">
+		<div>数据源管理</div>
+		<div>账户&权限</div>
+		<div>日志管理</div>
+		<div>参数配置</div>
+		<div>信息管理</div>
+		</div>
+		</div>
+		<div class="nav-icon sidebar-trans"><span>公告管理<i class="fa fa-gear"></i></span></div>
+	</div>
+	<div class="sidebar-right" style="display:none;">
+	<div class="sidebar-nav">
+	<h3>当月</h3>
+	<ul>
+	<li><i></i>新售终端登网概况</li>
+	 <li class="dropdown"><i class="fa fa-sort-down"></i>新售终端登网概况
+	 <ul>
+	 <li>新售终端登网概况<li>
+	 <li>新售终端登网概况</li>
+	 </ul>
+	</li>
+	 <li class="dropdown"><i class="fa fa-sort-down"></i>  当月未登网终端渠道TOP
+	 <ul>
+	 <li> 当月未登网终端渠道TOP<li>
+	 <li> 当月未登网终端渠道TOP</li>
+	 </ul>
+	</li>
+	<li> <i></i>全年累计</li>
+	</ul>
+	</div>
+	<div class="sidebar-nav">
+	<h3>去年累计</h3>
+	<ul>
+	<li><i></i>终端登网概况</li>
+	 <li class="dropdown"><i class="fa fa-sort-down"></i> 终端分价位登网情况
+	 <ul>
+	 <li>终端分价位登网情况<li>
+	 <li>终端分价位登网情况</li>
+	 </ul>
+	</li>
+	 <li class="dropdown"><i class="fa fa-sort-down"></i>  终端分价位登网情况
+	 <ul>
+	 <li> 当月未登网终端渠道TOP<li>
+	 <li> 当月未登网终端渠道TOP</li>
+	 </ul>
+	</li>
+	<li> <i></i>全年累计</li>
+	</ul>
+	</div>
+
+	<div class="sidebar-nav" style="display:none;">
+	<h3>渠道</h3>
+	<ul>
+	<li><i></i>地市销售登网情况跟踪</li>
+	 <li class="dropdown"><i class="fa fa-sort-down"></i>  分渠道销售登网情况跟踪
+	 <ul>
+	 <li>终端分价位登网情况<li>
+	 <li>终端分价位登网情况</li>
+	 </ul>
+	</li>
+	<li> <i></i>未登网</li>
+	</ul>
+	</div>
+	</div>
+	<div class="navbar-inner" style="display:none;">
+	   <span class="fa fa-align-right"></span>
+	</div>
+</div>
+<!--右边内容-->
+	<div class="viewFramework-product">
+	<div class="breadcrumb"><i class="fa fa-home"></i> <a class="text-info" href="/">现在的位置</a><span class="c-666 en">&gt;</span>系统管理<span class="c-666 en">&gt;</span><span class="c-666">报表配置</span></div>
+	<!--表单查询-->
+	<div class="row mt-10 ">
+	<div class="col-md-8">
+	<select class="form-control ml-15" style="display:inline;">
+	<option>报表类型01</option>
+	<option>报表类型02</option>
+	<option>报表类型03</option>
+	<option>报表类型04</option>
+	</select>
+	<select class="form-control" style="display:inline;">
+	<option>状态01</option>
+	<option>状态02</option>
+	</select>
+	<select class="form-control" style="display:inline;">
+	<option>状态01</option>
+	<option>状态02</option>
+	</select>
+	</div>
+	<div class="col-md-4 text-right">
+	<button class="btn btn-info" type="submit">查询</button>
+	<button  class="btn btn-info">新增</button>
+	<button  class="btn btn-info">初始化</button>
+	<button  class="btn btn-info mr-15">生成模板</button>
+	</div>
+	</div>
+	<!--按钮表格-->
+	<table class="table table-bordered table-condensed mt-15">
+	<thead>
+	<tr>
+	<th><input type="checkbox"/>序号</th>
+	<th>报表名称</th>
+	<th>来源</th>
+	<th>生成表名</th>
+	<th>执行类型</th>
+	<th>执行时间</th>
+	<th>建表周期</th>
+	<th>状态</th>
+	<th>操作</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td><label><input type="checkbox">01</label></td>
+	<td>用户目标分群测试第一表</td>
+	<td>数据分析--渠--终端登网情况</td>
+	<td>IMEI_BRPT_000001</td>
+	<td>自动</td>
+	<td>00:00</td>
+	<td>仅建一次</td>
+	<td>启用</td>
+	<td><a>复制</a>  <a>修改</a>  <a>维护</a>  <a>统计口径</a></td>
+	</tr>
+	<tr>
+    <td><label><input type="checkbox">02</label></td>
+	<td>用户目标分群测试第一表</td>
+	<td>数据分析--渠--终端登网情况</td>
+	<td>IMEI_BRPT_000001</td>
+	<td>自动</td>
+	<td>00:00</td>
+	<td>仅建一次</td>
+	<td>启用</td>
+	<td><a>复制</a>  <a>修改</a>  <a>维护</a>  <a>统计口径</a></td>
+	</tr>
+	<tr>
+    <td><label><input type="checkbox">03</label></td>
+	<td>用户目标分群测试第一表</td>
+	<td>数据分析--渠--终端登网情况</td>
+	<td>IMEI_BRPT_000001</td>
+	<td>自动</td>
+	<td>00:00</td>
+	<td>仅建一次</td>
+	<td>启用</td>
+	<td><a>复制</a>  <a>修改</a>  <a>维护</a>  <a>统计口径</a></td>
+	</tr>
+	<tr>
+    <td><label><input type="checkbox">04</label></td>
+	<td>用户目标分群测试第一表</td>
+	<td>数据分析--渠--终端登网情况</td>
+	<td>IMEI_BRPT_000001</td>
+	<td>自动</td>
+	<td>00:00</td>
+	<td>仅建一次</td>
+	<td>启用</td>
+	<td><a>复制</a>  <a>修改</a>  <a>维护</a>  <a>统计口径</a></td>
+	</tr>
+		<tr>
+    <td><label><input type="checkbox">05</label></td>
+	<td>用户目标分群测试第一表</td>
+	<td>数据分析--渠--终端登网情况</td>
+	<td>IMEI_BRPT_000001</td>
+	<td>自动</td>
+	<td>00:00</td>
+	<td>仅建一次</td>
+	<td>启用</td>
+	<td><a>复制</a>  <a>修改</a>  <a>维护</a>  <a>统计口径</a></td>
+	</tr>
+		<tr>
+    <td><label><input type="checkbox">06</label></td>
+	<td>用户目标分群测试第一表</td>
+	<td>数据分析--渠--终端登网情况</td>
+	<td>IMEI_BRPT_000001</td>
+	<td>自动</td>
+	<td>00:00</td>
+	<td>仅建一次</td>
+	<td>启用</td>
+	<td><a>复制</a>  <a>修改</a>  <a>维护</a>  <a>统计口径</a></td>
+	</tr>
+		<tr>
+    <td><label><input type="checkbox">07</label></td>
+	<td>用户目标分群测试第一表</td>
+	<td>数据分析--渠--终端登网情况</td>
+	<td>IMEI_BRPT_000001</td>
+	<td>自动</td>
+	<td>00:00</td>
+	<td>仅建一次</td>
+	<td>启用</td>
+	<td><a>复制</a>  <a>修改</a>  <a>维护</a>  <a>统计口径</a></td>
+	</tr>
+		<tr>
+    <td><label><input type="checkbox">08</label></td>
+	<td>用户目标分群测试第一表</td>
+	<td>数据分析--渠--终端登网情况</td>
+	<td>IMEI_BRPT_000001</td>
+	<td>自动</td>
+	<td>00:00</td>
+	<td>仅建一次</td>
+	<td>启用</td>
+	<td><a>复制</a>  <a>修改</a>  <a>维护</a>  <a>统计口径</a></td>
+	</tr>
+	<tr>
+    <td><label><input type="checkbox">09</label></td>
+	<td>用户目标分群测试第一表</td>
+	<td>数据分析--渠--终端登网情况</td>
+	<td>IMEI_BRPT_000001</td>
+	<td>自动</td>
+	<td>00:00</td>
+	<td>仅建一次</td>
+	<td>启用</td>
+	<td><a>复制</a>  <a>修改</a>  <a>维护</a>  <a>统计口径</a></td>
+	</tr>
+	<tr>
+    <td><label><input type="checkbox">10</label></td>
+	<td>用户目标分群测试第一表</td>
+	<td>数据分析--渠--终端登网情况</td>
+	<td>IMEI_BRPT_000001</td>
+	<td>自动</td>
+	<td>00:00</td>
+	<td>仅建一次</td>
+	<td>启用</td>
+	<td><a>复制</a>  <a>修改</a>  <a>维护</a>  <a>统计口径</a></td>
+	</tr>
+	<tr>
+    <td><label><input type="checkbox">11</label></td>
+	<td>用户目标分群测试第一表</td>
+	<td>数据分析--渠--终端登网情况</td>
+	<td>IMEI_BRPT_000001</td>
+	<td>自动</td>
+	<td>00:00</td>
+	<td>仅建一次</td>
+	<td>启用</td>
+	<td><a>复制</a>  <a>修改</a>  <a>维护</a>  <a>统计口径</a></td>
+	</tr>
+	<tr>
+    <td><label><input type="checkbox">12</label></td>
+	<td>用户目标分群测试第一表</td>
+	<td>数据分析--渠--终端登网情况</td>
+	<td>IMEI_BRPT_000001</td>
+	<td>自动</td>
+	<td>00:00</td>
+	<td>仅建一次</td>
+	<td>启用</td>
+	<td><a>复制</a>  <a>修改</a>  <a>维护</a>  <a>统计口径</a></td>
+	</tr>
+	<tr>
+    <td><label><input type="checkbox">13</label></td>
+	<td>用户目标分群测试第一表</td>
+	<td>数据分析--渠--终端登网情况</td>
+	<td>IMEI_BRPT_000001</td>
+	<td>自动</td>
+	<td>00:00</td>
+	<td>仅建一次</td>
+	<td>启用</td>
+	<td><a>复制</a>  <a>修改</a>  <a>维护</a>  <a>统计口径</a></td>
+	</tr>
+	</tbody>
+	</table>
+	<div class="laypage_main laypageskin_default" >
+<a href="javascript:;" class="laypage_prev">上一页</a>
+<a href="javascript:;" class="laypage_first"  title="首页">1</a><span>…</span>
+<a href="javascript:;" >4</a><a href="javascript:;" >5</a><span class="laypage_curr">6</span>
+<a href="javascript:;" data-page="7">7</a><a href="javascript:;" data-page="8">8</a><span>…</span>
+<a href="javascript:;" class="laypage_last" title="尾页" data-page="32">32</a><a href="javascript:;" class="laypage_next" data-page="7">下一页</a></div>
+	</div>
+</div>
+</body>
+</html>
